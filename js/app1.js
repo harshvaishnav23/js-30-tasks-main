@@ -7,6 +7,7 @@ const btn = document.getElementById('btn')
 const onBtnClick = (eve) =>{
     let num = inputNum.value;
     cl(num);
+    eve.target.reset()
     if(num % 1 != 0 || num == 0){
         alert('Please enter whole number')
     }else if(num % 2 == 0){
@@ -14,6 +15,7 @@ const onBtnClick = (eve) =>{
     }else{
         alert(`${num} is odd Number`)
     }
+   
 }
 
 
